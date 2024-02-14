@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular&display=swap");
+@import "start.css";
+/* ======================================== Header ======================================== */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  min-height: 4.44rem;
+  column-gap: 29px;
+  max-width: 1187px;
+}
+.header__logo {
+  position: relative;
+  z-index: 10;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.25rem;
+  row-gap: 0.3125rem;
+}
+.menu__row {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+.menu__item {
+}
+.menu__link {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #a6a8ad;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.menu__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+.menu__login {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #a6a8ad;
+}
+.menu__login:hover {
+  text-decoration: underline;
+}
+.menu__button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1.3125rem;
+  height: 2.19rem;
+  font-size: 1rem;
+  line-height: 1.15;
+  text-align: center;
+  color: #121214;
+  transition: all 0.3s ease;
+  text-wrap: nowrap;
+}
+.menu__button:hover {
+  background-color: #e4e1e1;
+}
+/* ======================================== Burger menu ======================================== */
+.icon-menu {
+  display: none;
+}
+@media (max-width: 840px) {
+  .header__container,
+  .menu__list {
+    column-gap: 10px;
+  }
+  .icon-menu {
+    display: block;
+    flex: 0 0 30px;
+    height: 18px;
+    position: relative;
+    z-index: 10;
+  }
+  .icon-menu span,
+  .icon-menu:before,
+  .icon-menu:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+  .menu-open .icon-menu:before {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu:after {
+    bottom: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: -100%;
+    top: 0;
+    padding: 100px 15px 30px 15px;
+    overflow: auto;
+    transition: left 0.3s ease;
+  }
+  .menu__body::before {
+    content: "";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 70px;
+    background-color: #000;
+    z-index: 10;
+    transition: left 0.3s ease;
+  }
+  .menu__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+  }
+  .menu__link {
+    font-size: 2rem;
+  }
+}
+.menu-open .menu__body,
+.menu-open .menu__body::before {
+  left: 0;
+}
+.menu-open body {
+  overflow: hidden;
+}
+.header__decor {
+  padding: 11px;
+  background-color: #0033ff;
+}
+.decor-header__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 2.875em;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+.decor-header__link {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+.decor-header__link:hover {
+  text-decoration: underline;
+}
+/* ================================================================================ */
+@media (max-width: 374.98px) {
+  .header__logo {
+    width: 22px;
+    flex: 0 0 22px;
+    overflow: hidden;
+  }
+  .menu__buttons {
+    column-gap: 15px;
+  }
+}
+/* ================================================================================ */
