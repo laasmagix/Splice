@@ -31,6 +31,31 @@
     display: flex;
   }
 }
+.subtitle {
+  font-size: 0.75rem;
+  line-height: 1.16667;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #a6a8ad;
+}
+.title {
+  font-size: 1.75rem;
+  line-height: 1.28571;
+}
+@media (max-width: 630px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media (max-width: 630px) {
+  .text {
+    font-size: 0.875rem;
+  }
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -385,22 +410,12 @@
   padding-right: 10px;
 }
 .sounds__subtitle {
-  font-size: 0.75rem;
-  line-height: 1.16667;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #a6a8ad;
   margin-bottom: 5px;
 }
 .sounds__title {
   margin-bottom: 12px;
-  font-size: 1.75rem;
-  line-height: 1.28571;
 }
 .sounds__text {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #fff;
   margin-bottom: 18px;
 }
 .sounds__button {
@@ -430,4 +445,59 @@
     padding-top: 35px;
   }
 }
+/* ================================================================================ */
+/* ======================================== Experience ======================================== */
+.page__experience {
+}
+.experience {
+  padding-top: 95px;
+}
+.experience__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience__image {
+}
+.experience__image img {
+  max-width: 100%;
+}
+.experience__body {
+  text-align: right;
+  max-width: 420px;
+  padding-left: 10px;
+}
+.experience__subtitle {
+  margin-bottom: 5px;
+}
+.experience__title {
+  margin-bottom: 12px;
+}
+.experience__text {
+}
+@media (max-width: 991.98px) {
+  .experience {
+    padding-top: 65px;
+  }
+  .experience__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .experience__body {
+    max-width: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .experience__image {
+    order: 2;
+  }
+}
+@media (max-width: 991.98px) {
+  .experience {
+    padding-top: 35px;
+  }
+}
+
 /* ================================================================================ */
