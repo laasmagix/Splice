@@ -557,3 +557,59 @@
   }
 }
 /* ================================================================================ */
+/* ======================================== Technology ======================================== */
+.page__technology {
+}
+.technology {
+  padding-top: 95px;
+}
+.technology__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.technology__image {
+}
+.technology__image img {
+  max-width: 100%;
+}
+.technology__body {
+  text-align: right;
+  max-width: 440px;
+  padding-left: 10px;
+}
+.technology__subtitle {
+  margin-bottom: 5px;
+}
+.technology__title {
+  margin-bottom: 12px;
+}
+.technology__text {
+  margin-bottom: 18px;
+}
+.technology__button {
+}
+@media (max-width: 991.98px) {
+  .technology {
+    padding-top: 65px;
+  }
+  .technology__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .technology__body {
+    max-width: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .technology__image {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 425.98px) {
+  .technology {
+    padding-top: 35px;
+  }
+}
+/* ================================================================================ */
