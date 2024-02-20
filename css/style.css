@@ -694,3 +694,48 @@
   }
 }
 /* ================================================================================ */
+/* ======================================== Try ======================================== */
+.page__try {
+}
+.try {
+  position: relative;
+}
+.try__container {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.try__title {
+  font-size: 3.38rem;
+  line-height: 1.1;
+  margin-bottom: 57px;
+}
+.try__button {
+}
+.try__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 767.98px) {
+  .try__title {
+    margin-bottom: 30px;
+  }
+  .try__image img {
+    object-position: right;
+    opacity: 0.8;
+  }
+}
+@media (max-width: 425.98px) {
+  .try__title {
+    font-size: 40px;
+  }
+}
+/* ================================================================================ */
