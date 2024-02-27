@@ -739,3 +739,108 @@
   }
 }
 /* ================================================================================ */
+/* ======================================== Footer ======================================== */
+.footer {
+  padding-top: 48px;
+  padding-bottom: 60px;
+}
+.footer__container {
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(auto, 1fr));
+  padding-bottom: 23px;
+  gap: 50px;
+}
+.footer__column {
+}
+.column-footer {
+}
+.column-footer__list_bottom {
+  padding-bottom: 24px;
+}
+.column-footer__title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.column-footer__list {
+}
+.column-footer__item {
+}
+.column-footer__link {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #a6a8ad;
+}
+.column-footer__link:hover {
+  text-decoration: underline;
+}
+.footer__bottom {
+  padding-top: 60px;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 24px;
+}
+.footer__item {
+}
+.footer__link {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #a6a8ad;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+}
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer__bottom {
+    padding-top: 30px;
+  }
+  .footer__top {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer__top {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+  .footer__list {
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 425.98px) {
+  .footer__top {
+    gap: 50px;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    justify-items: center;
+    text-align: center;
+  }
+  .column-footer__title {
+    font-size: 1.5rem;
+  }
+  .column-footer__link {
+    font-size: 1.125rem;
+  }
+  .column-footer__list_bottom {
+    padding-bottom: 40px;
+  }
+}
+/* ================================================================================ */
